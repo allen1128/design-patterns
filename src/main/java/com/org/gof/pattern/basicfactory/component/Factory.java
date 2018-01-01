@@ -1,4 +1,4 @@
-package com.org.gof.patterns.basicfactory.Logic;
+package com.org.gof.pattern.basicfactory.component;
 
 public class Factory {
     public static Api create(char c) {
