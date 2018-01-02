@@ -17,7 +17,13 @@ Facade
 * remove redundency otherwise the same interaction logic is repeated in Client.
 
 
-
+Adapter
+----------------------
+* adapter the implementation of target api to reuse the existing functionality (adaptee)
+* usually it should not introduce new functions. exception: smart adapter
+* bi-directional adapter which allows the two interfaces to be interchangable.
+* object adapter is preferable over class adapter, in which adapter implements the target and inherite from the adaptee. because object adapter is considered lower coupling; limited level of inheritance in java vs. multiple adatee allowed in object adapter.
+* mis-use adapter will lead to mis-understanding: ApiA object is in fact calling ImplB.
 
 
 
