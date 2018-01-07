@@ -48,8 +48,7 @@ Strategy Pattern
 ---------------------
 * the purpose of strategy pattern is to separate the algorithms from the business logics and form separate classes, and make these class interchangable (via the same interface).
 * the core of the pattern is not how to realize algorithms but how to organize them.
-* the client or the context class decides on which strategy to use.
-
+* the client or the context class decides on which strategy to use; this means inheriting the context class or single class but with lots of member variables.
 
 
 
