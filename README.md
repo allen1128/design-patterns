@@ -44,6 +44,11 @@ Basic Factory
 * when by input parameter, Client would need to know something about the component.
 * when by configuration file (ie. application.properties) or by cache, Client would know little about the component.
 
+Strategy Pattern
+---------------------
+* the purpose of strategy pattern is to separate the algorithms from the business logics and form separate classes, and make these class interchangable (via the same interface).
+* the core of the pattern is not how to realize algorithms but how to organize them.
+* the client or the context class decides on which strategy to use.
 
 
 
