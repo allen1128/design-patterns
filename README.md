@@ -22,13 +22,11 @@ Adapter
 Singleton
 ----------------------
 * implementation basic logic: no public constructor + public static method to get instance
-4 ways to achieve them
-----------------------
-----------------------
-* enum way to recommend: easy to do and clean code; enum can be viewed as generic singleton class
+* 4 ways to achieve them
+* hungry load via volatile static keyword is sufficient most of time: static variable is initialized during class loading and only once.
+* use enum: easy to do and clean code; enum can be viewed as generic singleton class
 * lazy initialization holder class: by inner static class. inner so that it will be not loaded by default. static so that the initialization is done during class loading and only once.
-* hungry load via volatile static keyword : static variable is initialized during class loading and only once.
-* double check lock method: relatively poor performance
+* double check lock method: relatively poor performance but use very common
 
 
 Factory Pattern
