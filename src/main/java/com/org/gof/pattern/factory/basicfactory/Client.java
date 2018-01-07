@@ -1,7 +1,7 @@
-package com.org.gof.pattern.basicfactory;
+package com.org.gof.pattern.factory.basicfactory;
 
-import com.org.gof.pattern.basicfactory.component.Api;
-import com.org.gof.pattern.basicfactory.component.Factory;
+import com.org.gof.pattern.factory.basicfactory.component.Api;
+import com.org.gof.pattern.factory.basicfactory.component.Factory;
 
 public class Client {
     public static void main(String[] args){

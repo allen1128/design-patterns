@@ -1,4 +1,4 @@
-package com.org.gof.pattern.basicfactory.component;
+package com.org.gof.pattern.factory.basicfactory.component;
 
 public class ImplA implements Api {
     public void operate(String name) {

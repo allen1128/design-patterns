@@ -1,14 +1,7 @@
 GOF Design Patterns
 ===============
 
-Basic Factory
----------------------
-* Factory is static; it's within the encapsulated component.
-* Client only deals with Factory therefore the logic within Implementation classes is hidden from Client, which leads to lower coupling.
-* Changing in Implementation class will only lead to changes in Factory class.
-* How Factory class knows which Implementation of the api to initilize: by input parameter, by configuration file, by cache. 
-* when by input parameter, Client would need to know something about the component.
-* when by configuration file (ie. application.properties) or by cache, Client would know little about the component.
+
 
 Facade
 ----------------------
@@ -36,6 +29,23 @@ Singleton
 * lazy initialization holder class: by inner static class. inner so that it will be not loaded by default. static so that the initialization is done during class loading and only once.
 * hungry load via volatile static keyword : static variable is initialized during class loading and only once.
 * double check lock method: relatively poor performance
+
+
+Factory Pattern
+----------------------
+* standard factory patterns:  the factory class delays the decision of which API class to instantiate to its subfactory classes. The FactoryMethod that uses to make decision is usually protected, which means it is not exposed to external components; it returns the instance of the api class, and this instance could be returned to the client or used internally in the public method of the factory class.
+* parameterized factory pattern: the client calls the factory method with a parameter, which is used to decide which api class to use. basic Factory is a small type of parameterized factory pattern.
+
+
+Basic Factory
+---------------------
+* Factory is static; it's within the encapsulated component.
+* Client only deals with Factory therefore the logic within Implementation classes is hidden from Client, which leads to lower coupling.
+* Changing in Implementation class will only lead to changes in Factory class.
+* How Factory class knows which Implementation of the api to initilize: by input parameter, by configuration file, by cache.
+* when by input parameter, Client would need to know something about the component.
+* when by configuration file (ie. application.properties) or by cache, Client would know little about the component.
+
 
 
 
