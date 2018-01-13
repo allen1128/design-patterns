@@ -55,6 +55,12 @@ Builder Pattern
 * director contains the algorithm to build; algorithm is separated from the builder class; director doesn't know in details how to build the parts.
 * builder contains the logic to build the details parts and the final products being built. 
 
+Chain of Responsibility
+---------------------
+* client doesn't need to know which handler will handle its request; there will be one or none handler
+* chain can be built with data from property files or db entries; or it will be realized using inheriance where the child object would have parent class as it's successor; or it can be built by the client
+
+
 
 
 
