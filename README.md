@@ -50,6 +50,12 @@ Strategy Pattern
 * the core of the pattern is not how to realize algorithms but how to organize them.
 * the client or the context class decides on which strategy to use; this means inheriting the context class or single class but with lots of member variables.
 
+Builder Pattern
+---------------------
+* director contains the algorithm to build; algorithm is separated from the builder class; director doesn't know in details how to build the parts.
+* builder contains the logic to build the details parts and the final products being built. 
+
+
 
 
 

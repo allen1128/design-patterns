@@ -1,6 +1,6 @@
 package com.org.gof.pattern.strategy.component;
 
-public class Context {
+public class Context implements Cloneable{
     Strategy strategy = null;
     public Context(Strategy strategy){
         this.strategy = strategy;
