@@ -61,13 +61,18 @@ Builder Pattern
 Chain of Responsibility
 ---------------------
 * client doesn't need to know which handler will handle its request; there will be one or none handler
-* chain can be built with data from property files or db entries; or it will be realized using inheriance where the child object would have parent class as it's successor; or it can be built by the client
+* chain can be built with data from property files or db entries; or it will be realized using inheritance where the child object would have parent class as it's successor; or it can be built by the client
 
 
-flyweight
+Flyweight
 ---------------------
 * move repeated properties of large number of instances to a seperate flyweight object, in order to decrease memory usage.
 * unsharedflyweight is composed of sharedflyweight; note that it doesn't need to buffer in memory because sharedflyweight is buffered.
+
+Decorator
+---------------------
+* enhance the functions of object dynamically and with transparancy
+* avoid using inheritance which will lead to explosion of sub-classes
 
 
 
