@@ -44,16 +44,19 @@ Basic Factory
 * when by input parameter, Client would need to know something about the component.
 * when by configuration file (ie. application.properties) or by cache, Client would know little about the component.
 
+
 Strategy Pattern
 ---------------------
 * the purpose of strategy pattern is to separate the algorithms from the business logics and form separate classes, and make these class interchangable (via the same interface).
 * the core of the pattern is not how to realize algorithms but how to organize them.
 * the client or the context class decides on which strategy to use; this means inheriting the context class or single class but with lots of member variables.
 
+
 Builder Pattern
 ---------------------
 * director contains the algorithm to build; algorithm is separated from the builder class; director doesn't know in details how to build the parts.
 * builder contains the logic to build the details parts and the final products being built. 
+
 
 Chain of Responsibility
 ---------------------
@@ -61,6 +64,10 @@ Chain of Responsibility
 * chain can be built with data from property files or db entries; or it will be realized using inheriance where the child object would have parent class as it's successor; or it can be built by the client
 
 
+flyweight
+---------------------
+* move repeated properties of large number of instances to a seperate flyweight object, in order to decrease memory usage.
+* unsharedflyweight is composed of sharedflyweight; note that it doesn't need to buffer in memory because sharedflyweight is buffered.
 
 
 
