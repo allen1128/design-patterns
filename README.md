@@ -74,6 +74,12 @@ Decorator
 * enhance the functions of object dynamically and with transparancy
 * avoid using inheritance which will lead to explosion of sub-classes
 
-
+Observer / Subscriber + Publisher
+---------------------
+* decouple the object and related objects.
+* one to many relationships or many to many
+* unidirectional dependency (Observer is dependent on Observable); there should be not sequential difference for the observers.
+* there are push model and push model where in push model, the required data is pushed to the observer (this has limitions if the observer needs more data in the future) vs. in the pull model, the observable instance is passed and the observer pulls whatever data it needs.
+* the timing for notifying the observers has to be after the Observable's internal states have been successfully changed.
 
 
