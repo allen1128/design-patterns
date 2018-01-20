@@ -69,17 +69,36 @@ Flyweight
 * move repeated properties of large number of instances to a seperate flyweight object, in order to decrease memory usage.
 * unsharedflyweight is composed of sharedflyweight; note that it doesn't need to buffer in memory because sharedflyweight is buffered.
 
+
 Decorator
 ---------------------
-* enhance the functions of object dynamically and with transparancy
+* enhance the functions of object dynamically and with transparency
 * avoid using inheritance which will lead to explosion of sub-classes
+
 
 Observer / Subscriber + Publisher
 ---------------------
 * decouple the object and related objects.
 * one to many relationships or many to many
 * unidirectional dependency (Observer is dependent on Observable); there should be not sequential difference for the observers.
-* there are push model and push model where in push model, the required data is pushed to the observer (this has limitions if the observer needs more data in the future) vs. in the pull model, the observable instance is passed and the observer pulls whatever data it needs.
+* there are push model and push model where in push model, the required data is pushed to the observer (this has limitations if the observer needs more data in the future) vs. in the pull model, the observable instance is passed and the observer pulls whatever data it needs.
 * the timing for notifying the observers has to be after the Observable's internal states have been successfully changed.
+* there are support provided in java.util
+
+
+Bridge
+---------------------
+* Bridge is usually used in the context where there are two or more dimensions of one function and both dimension can evolve seperately (ie, a message delivery function can have 1. messages delivery means (sms, email). 2. message urgency types(normal, urgent, super urgent)
+* build the bridge between the abstract and the implementation in order to seperate them.
+* unidirectional dependency: the abstract part use the instance of the implementation classes. Usually the abstract class will contain the object of the interface of the implementation class.
+* the main purpose is to decouple and let both sides to evolve separately.
+* allow dynamically swapping the implementations
+* abstract class can have multiple implementations and implementations can be used by multiple abstract classes.
+
+
+
+
+
+
 
 
