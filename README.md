@@ -96,7 +96,12 @@ Bridge
 * abstract class can have multiple implementations and implementations can be used by multiple abstract classes.
 
 
-
+Template
+---------------------
+* template pattern defines the skeleton of a algorithm which should not be changed and leaves some methods' detailed implementations to the child classes.
+* the algorithm method is defines in the parent (Abstract) class and should be final so that its implementation cannot be changed.
+* parent classs contains some public functional methods that could maybe final.
+* if the are two modules in which the main precedures are the same and they only differ in some of the steps; it is called for template pattern.
 
 
 
