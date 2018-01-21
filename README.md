@@ -100,8 +100,15 @@ Template
 ---------------------
 * template pattern defines the skeleton of a algorithm which should not be changed and leaves some methods' detailed implementations to the child classes.
 * the algorithm method is defines in the parent (Abstract) class and should be final so that its implementation cannot be changed.
-* parent classs contains some public functional methods that could maybe final.
+* parent class contains some public functional methods that could maybe final.
 * if the are two modules in which the main precedures are the same and they only differ in some of the steps; it is called for template pattern.
+
+
+Momentor
+---------------------
+* momentor is used to capture the INNER state of the object in order to restore it later while keeping its encapsulation property intact; meaning the client has no clues about what and how properties are captured.
+* it can be used together with Commander pattern in order to implement a sequence of undo and redo functions
+* it can be used together with prototype pattern if it's the whole originator object needed to be saved and recovered.
 
 
 
