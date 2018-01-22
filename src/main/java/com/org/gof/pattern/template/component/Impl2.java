@@ -14,4 +14,6 @@ public class Impl2 extends Abstract {
     protected void operation3() {
         System.out.println("run operation 3 on impl2");
     }
+
+
 }

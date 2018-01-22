@@ -111,6 +111,12 @@ _`GOF Design Patterns`_
 * it can be used together with prototype pattern if it's the whole originator object needed to be saved and recovered.
 
 
+`State`
+---------------------
+* strong correspondence between one state and one processing function
+* simplify the logic controller because each state will have its own processing class
+* extensibility and explicit transitions between states
+ 
 
 
 
