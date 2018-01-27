@@ -117,6 +117,11 @@ _`GOF Design Patterns`_
 * simplify the logic controller because each state will have its own processing class
 * extensibility and explicit transitions between states
  
+ 
+`Proxy`
+---------------------
+* client uses to proxy object to interact with the target object.
+* could be used for (1) lazy loading, (2) authorization controls
 
 
 
