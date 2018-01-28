@@ -2,7 +2,6 @@ _`GOF Design Patterns`_
 ===============
 
 
-
 `Facade`
 ----------------------
 * move the interaction logic between Client and the component to Facade class; Client only interacts with Facade.
@@ -123,5 +122,8 @@ _`GOF Design Patterns`_
 * client uses to proxy object to interact with the target object.
 * could be used for (1) lazy loading, (2) authorization controls
 
-
-
+`Composite`
+---------------------
+* Composite pattern constructs tree structure; therefore, any functions that require tree structure can consider composite pattern
+* usually involves recursively calling the subcomponents.
+ 
