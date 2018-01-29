@@ -127,3 +127,9 @@ _`GOF Design Patterns`_
 * Composite pattern constructs tree structure; therefore, any functions that require tree structure can consider composite pattern
 * usually involves recursively calling the subcomponents.
  
+`Prototype`
+---------------------
+* use to solve the situation where only interface is 
+* deep clone to create an exactly same yet completely new object
+* 
+
